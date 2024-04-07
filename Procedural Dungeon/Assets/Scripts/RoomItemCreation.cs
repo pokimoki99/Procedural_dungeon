@@ -13,7 +13,8 @@ public class RoomItemCreation : MonoBehaviour
 
     void Start()
     {
-        randomNum = Random.Range(0, 100);
+        randomNum = Random.Range(0, 9);
+        createObjects(randomNum);
     }
 
     // Update is called once per frame
@@ -60,7 +61,7 @@ public class RoomItemCreation : MonoBehaviour
         {
             foreach (var item in DoorLoc)
             {
-                Instantiate(door, item.transform.position, item.transform.rotation);
+                Instantiate(door, item.transform.position, door.transform.rotation);
             }
         }
     }

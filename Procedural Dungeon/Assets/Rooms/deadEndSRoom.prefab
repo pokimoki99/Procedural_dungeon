@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1312404074684856817
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7454961180941767416}
+  m_Layer: 0
+  m_Name: DoorLocation1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7454961180941767416
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312404074684856817}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.01, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2196948522944550256}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2506153818402939295
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,6 +241,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &2925927503061375905
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3315518696630192950}
+  m_Layer: 0
+  m_Name: DoorLocation1 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3315518696630192950
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2925927503061375905}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.93, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2196948522944550256}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3197796475481360436
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,7 +290,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3715569906766429292
 Transform:
   m_ObjectHideFlags: 0
@@ -438,7 +500,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6462413795156278914
 Transform:
   m_ObjectHideFlags: 0
@@ -753,7 +815,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8980118229461744434
 Transform:
   m_ObjectHideFlags: 0
@@ -840,6 +902,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &6474764993490731828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 576313626664969361}
+  m_Layer: 0
+  m_Name: Wall Painting1 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &576313626664969361
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6474764993490731828}
+  m_LocalRotation: {x: 0.013307403, y: 0.9998882, z: 0.0068322215, w: -0.0000909293}
+  m_LocalPosition: {x: -0.293, y: 1.189, z: 1.569}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2196948522944550256}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: -0.783, y: 180, z: 1.525}
 --- !u!1 &7166830399727510805
 GameObject:
   m_ObjectHideFlags: 0
@@ -1059,6 +1152,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2196948522944550256}
+  - component: {fileID: 6601856239000000944}
   m_Layer: 0
   m_Name: deadEndSRoom
   m_TagString: Untagged
@@ -1092,9 +1186,80 @@ Transform:
   - {fileID: 8980118229461744434}
   - {fileID: 6462413795156278914}
   - {fileID: 5457970256948811425}
+  - {fileID: 7454961180941767416}
+  - {fileID: 3315518696630192950}
+  - {fileID: 4273160810319507211}
+  - {fileID: 576313626664969361}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6601856239000000944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7933666714796036768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee7f062fa6f44640a8851a4bad818d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  background: {fileID: 0}
+  wall_Painting: {fileID: 100000, guid: 00214ec25c3584247acda644e5c444c0, type: 3}
+  bench: {fileID: 100000, guid: 1286b4a733811134dbd33e14f6fe8ca1, type: 3}
+  table: {fileID: 100000, guid: e274dd71b041d6e408c83336cc82256b, type: 3}
+  collectable: {fileID: 100000, guid: a2eee9005c521a742a1445bc0f7611b6, type: 3}
+  bookshelf: {fileID: 100000, guid: 688c7572e7f535a4182d169d021b1e03, type: 3}
+  torch: {fileID: 1002705123656268, guid: d86ca2f4159e6a942abd8dfc52b38395, type: 3}
+  door: {fileID: 100000, guid: c3a2e9c7a879b7d41b29957e6f9ed6c0, type: 3}
+  crate: {fileID: 1000014188511100, guid: 5dcae5adf53292945adef517afe8041e, type: 3}
+  Walls:
+  - {fileID: 5248472636889050191}
+  - {fileID: 8549802094739204050}
+  - {fileID: 4424182294836364671}
+  - {fileID: 7166830399727510805}
+  smallObjects:
+  - {fileID: 8316587259790844632}
+  - {fileID: 3197796475481360436}
+  - {fileID: 5696477752317588637}
+  - {fileID: 3674176544287345559}
+  LargeObjects:
+  - {fileID: 8291602041420797453}
+  DoorLoc:
+  - {fileID: 1312404074684856817}
+  - {fileID: 2925927503061375905}
+--- !u!1 &7934410547656607518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4273160810319507211}
+  m_Layer: 0
+  m_Name: Wall Painting1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4273160810319507211
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7934410547656607518}
+  m_LocalRotation: {x: -0.012568982, y: 0.70699507, z: -0.0081141945, w: 0.7070603}
+  m_LocalPosition: {x: -0.361, y: 1.17, z: -1.507}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2196948522944550256}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: -0.361, y: 90, z: -1.676}
 --- !u!1 &8291602041420797453
 GameObject:
   m_ObjectHideFlags: 0
@@ -1113,7 +1278,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5457970256948811425
 Transform:
   m_ObjectHideFlags: 0
@@ -1218,7 +1383,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7402823534509902652
 Transform:
   m_ObjectHideFlags: 0
