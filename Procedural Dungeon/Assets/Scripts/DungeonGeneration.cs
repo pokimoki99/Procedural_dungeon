@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using StarterAssets;
 
 public class DungeonGeneration : MonoBehaviour
 {
@@ -12,10 +14,13 @@ public class DungeonGeneration : MonoBehaviour
     public Vector2 maxRoomSize = new Vector2(5, 5);
 
     private List<GameObject> rooms = new List<GameObject>();
+    public TMP_InputField textP;
+    public GameObject textfield, textfield2, CanvasObject;
+    public StarterAssetsInputs Player;
     // Start is called before the first frame update
     void Start()
     {
-        DungeonInfo(roomNum);
+        //DungeonInfo(roomNum);
     }
 
     // Update is called once per frame
@@ -106,5 +111,19 @@ public class DungeonGeneration : MonoBehaviour
             }
             return false;
         }
+    }
+
+    public void StringInput()
+    {
+        roomNum = int.Parse(textP.text.Trim());
+        DungeonInfo(roomNum);
+        textfield.SetActive(false);
+    }
+
+    public void StartGame()
+    {
+        Player.cursorLocked = true;
+        Player.cursorInputForLook = true;
+        CanvasObject.SetActive(false);
     }
 }

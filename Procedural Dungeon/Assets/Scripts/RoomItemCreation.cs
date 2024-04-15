@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class RoomItemCreation : MonoBehaviour
@@ -8,13 +9,34 @@ public class RoomItemCreation : MonoBehaviour
 
     public GameObject[] Walls, smallObjects, LargeObjects, DoorLoc;//location for objects
 
+    public DungeonGeneration DungeonGenerationObject;
+    public GameObject parentCanvas;
+    public GameObject InputFieldDecor, InputFieldDecorNum, Title, Title2;
+    public TMP_InputField textDec,textNum;
+
+    List<GameObject> prefabs;
+
+    float randomY = 0f;
+
     // Start is called before the first frame update
     int randomNum = 0;
+    int Decorations = 0;
 
     void Start()
     {
-        randomNum = Random.Range(0, 9);
-        createObjects(randomNum);
+        DungeonGenerationObject = GameObject.FindGameObjectWithTag("Player").GetComponent<DungeonGeneration>();
+        parentCanvas = GameObject.FindGameObjectWithTag("Canvas");
+        prefabs = new List<GameObject>();
+        prefabs.Add(Instantiate(InputFieldDecor));
+        prefabs.Add(Instantiate(Title));
+        prefabs.Add(Instantiate(Title2));
+        foreach (var item in prefabs)
+        {
+            item.transform.SetParent(parentCanvas.transform);
+            item.SetActive(true);
+        }
+        //randomNum = Random.Range(0, 9);
+        //createObjects(randomNum);
     }
 
     // Update is called once per frame
@@ -27,7 +49,7 @@ public class RoomItemCreation : MonoBehaviour
     {
         if (objectsNum == 0)
         {
-            Instantiate(background, Walls[Random.Range(0, Walls.Length)].transform.position, Walls[Random.Range(0, Walls.Length)].transform.rotation);
+            background.GetComponent<Renderer>().material.color = Color.black;
         }
         else if (objectsNum == 1)
         {
@@ -63,6 +85,34 @@ public class RoomItemCreation : MonoBehaviour
             {
                 Instantiate(door, item.transform.position, door.transform.rotation);
             }
+
         }
+        
+    }
+
+
+    public void StringInput()
+    {
+        Decorations = int.Parse(prefabs[2].GetComponent<TMP_InputField>().text.Trim());
+        createObjects(Decorations);
+        Destroy(prefabs[2]);
+        prefabs.RemoveAt(2);
+    }
+    public void DecorationNum()
+    {
+        randomNum = int.Parse(prefabs[0].GetComponent<TMP_InputField>().text.Trim());
+        for (int i = 0; i < randomNum; i++)
+        {
+            Vector3 newPos = new Vector3(InputFieldDecorNum.transform.position.x, InputFieldDecorNum.transform.position.y + randomY, InputFieldDecorNum.transform.position.z);
+            prefabs.Add(Instantiate(InputFieldDecorNum, newPos, InputFieldDecorNum.transform.rotation));
+            randomY += -50;
+        }
+        foreach (var item in prefabs)
+        {
+            item.transform.SetParent(parentCanvas.transform);
+            item.SetActive(true);
+        }
+        Destroy(prefabs[0]);
+        prefabs.RemoveAt(0);
     }
 }
